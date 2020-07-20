@@ -1,0 +1,523 @@
+/*  */
+
+.wd-play-panel {
+	position: relative;
+	background: #000;
+	min-height: 300px;
+}
+
+.wd-slides {
+	height: 100%;
+	overflow: hidden;
+}
+
+.wd-lyric {
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+	right: 45px;
+	text-align: center;
+	color: white;
+	z-index: 8;
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+
+.media-container {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 9;
+	background:-moz-linear-gradient(top, rgba(255,255,255, 0.1), #000);  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255,255,255, 0.1)), to(#000));  
+    background:-o-linear-gradient(top, rgba(255,255,255, 0.1), #000); 
+}
+
+/* extend owlcarousel stylesheet */
+.owl-carousel {
+	height: 100%;
+}
+
+.owl-carousel .item img {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* wd-infos-panel */
+.wd-infos-panel {
+	padding: 10px 15px 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.wd-infos-panel .avatar-box {
+	/*display: flex;*/
+	height: 54px;
+}
+
+.wd-infos-panel .avatar-box-item {
+	width: 50%;
+	float: left;
+}
+
+.wd-infos-panel .avatar-box-item .andicon {
+	width: 13px;
+	height: 13px;
+	float: left;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.wd-infos-panel .avatar {
+	width: 54px;
+	height: 54px;
+	border-radius: 27px;
+	margin-right: 15px;
+	float: left;
+}
+
+.wd-infos-panel .nickName-box {
+	/*flex: 1;*/
+	margin: 0 0 0 70px;
+	height: 54px;
+}
+
+.wd-infos-panel .nickname {
+	font-size: 16px;
+	color: #444444;
+	font-weight: bolder;
+	padding: 0;
+	display: block;
+	line-height: 54px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	margin-right: 5px;
+}
+
+.wd-infos-panel .fans {
+	font-size: 11px;
+	color: #999999;
+	padding: 0;
+	margin-top: 6px;
+	display: block;
+}
+
+.wd-info-content {
+	font-size: 16px;
+	color: #444444;
+	line-height: 1.3;
+	margin-top: 5px;
+}
+
+.wd-info-title {
+	font-size: 19px;
+	padding: 15px 0 0;
+	color: #222;
+	font-weight: bold;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 10px;
+}
+
+.wd-info-bot {
+	/*display: flex;*/
+	margin-top: 10px;
+}
+
+.playnum-wrap {
+	float: left;
+}
+
+.playnum-wrap .icon {
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.playnum-wrap .nums {
+	font-size: 12px;
+	color: #8a8a8a;
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: 2px;
+}
+
+.wd-info-bot .date {
+	display: block;
+	font-size: 12px;
+	color: #8a8a8a;
+	float: right;
+}
+
+.wd-title-bar {
+	border-left: 3px solid #fa7231;
+	height: 18px;
+	margin: 9px 0 9px 15px;
+	display: block;
+}
+
+.wd-title-bar .title {
+	font-size: 16px;
+	color: #444444;
+	margin-left: 10px;
+	line-height: 18px;
+	display: block;
+}
+
+.wd-comment-panel {
+	display: flex;
+}
+
+.comment-input {
+	flex: 1;
+	padding: 10px 15px;
+	font-size: 14px;
+	border-radius: 5px;
+	background: #f6f6f6;
+	border: 1px solid #e5e5e5;
+	outline: none;
+	color: #444444;
+	margin-left: 15px;
+}
+
+.comment-btn {
+	width: 82px;
+	padding: 13px 0;
+	background: #fa7030;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	margin-left: 10px;
+	border-radius: 5px;
+	margin-right: 15px;
+	display: block;
+}
+
+/* comment area */
+.wd-comments {
+	background: #fff;
+}
+
+.wd-comment-list {
+	margin-left: 15px;
+}
+
+.wd-comment {
+	display: none;
+	padding: 15px 0;
+	list-style: none;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.wd-comment .avatar {
+	width: 30px;
+	height: 30px;
+	display: block;
+	border-radius: 15px;
+	margin-right: 12px;
+}
+
+.wd-comment .content {
+	flex: 1;
+}
+
+.wd-comment .content-top {
+	margin-top: 5px;
+	display: flex;
+}
+
+.wd-comment .content-top .nickname {
+	color: #8a8a8a;
+	font-size: 14px;
+	flex: 1;
+	display: block;
+}
+
+.wd-comment .content-top .date {
+	color: #8a8a8a;
+	font-size: 12px;
+	margin-right: 15px;
+	display: block;
+}
+
+.wd-comment .content-text {
+	margin-top: 15px;
+	font-size: 16px;
+	line-height: 1.3;
+	color: #444444;
+}
+
+/*引导打开app*/
+.favouriteBtn {
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	bottom: 36px;
+	right: 12px;
+	z-index: 9;
+}
+
+.guide-download {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	height: 48px;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 9;
+}
+
+.guide-download-logo {
+	width: 34px;
+	height: 34px;
+	float: left;
+	margin: 7px 0px 7px 7px;
+}
+
+.guide-download-text {
+	font-size: 16px;
+	color: #fff;
+	float: left;
+	display: block;
+	margin-left: 12px;
+	margin-top: 15px;
+}
+
+.guide-download-btn {
+	padding: 9px 12px;
+	background: #fa7030;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	margin: 7px 10px;
+	border-radius: 5px;
+	display: block;
+	float: right;
+}
+
+.owl-carousel-item {
+	display: block;
+}
+
+.loadmore {
+	display: none;
+	font-size: 14px;
+	color: #fa7231;
+	text-align: center;
+	padding: 18px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.ad-con {
+	position: relative;
+}
+
+.ad-con-divide {
+	background: #f7f7f7;
+	height: 15px;
+}
+
+.ad-con-bg {
+	max-width: 100%;
+	width: 100%;
+}
+
+.ad-bot-link-wrap {
+	position: absolute;
+	display: block;
+	width: 90%;
+	bottom: 30px;
+	left: 5%;
+}
+
+.ad-con-link {
+	border-radius: 5px;
+	background: white;
+	float: left;
+	width: 46%;
+	display: block;
+}
+
+.ad-con-link-right {
+	border-radius: 5px;
+	display: block;
+	background: white;
+	width: 46%;
+	float: right;
+}
+
+.ad-con-gp-icon {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+.detail-page {
+	height: auto;
+}
+
+.detail-page .layui-m-layerbtn span[yes] {
+	color: #fa7231;
+}
+
+.divide-bar {
+	height: 10px;
+	background: #f7f7f7;
+}
+
+.wd-nav {
+	height: 45px;
+	background: #fff;
+	list-style: none;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.wd-nav-item {
+	width: 50%;
+	float: left;
+}
+
+.wd-nav-link {
+	display: block;
+	font-size: 14px;
+	color: #444;
+	line-height: 45px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.navbar {
+	position: absolute;
+    background: #fa7231;
+    height: 3px;
+    width: 110px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -55px;
+    display: none;
+}
+
+.wd-nav-item-select .wd-nav-link {
+	color: #fa7231;
+}
+
+.wd-nav-item .recording_icon {
+	width: 16px;
+	height: 16px;
+	margin-left: 6px;
+	vertical-align: -3px;
+}
+
+.wd-recordings-list {
+	list-style: none;
+	background: #f7f7f7;
+}
+
+.wd-recordings-item {
+	float: left;
+	width: 50%;
+	margin: 0 0 5px;
+	box-sizing: border-box;
+}
+
+.wd-recordings-link {
+	margin: 0 3px 0 0;
+	background: #fff;
+	display: block;
+}
+
+.wd-recordings-item:nth-of-type(2n) .wd-recordings-link {
+	margin: 0 0 0 3px;
+}
+
+.wd-recordings-top {
+	position: relative;
+	overflow: hidden;
+}
+
+.wd-recordings-cover {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+.wd-recordings-cover-auto {
+	max-width: none;
+}
+
+.wd-recordings-name {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	height: 45px;
+	font-size: 16px;
+	color: #fff;
+	line-height: 45px;
+	text-align: center;
+	background: #000; /* 一些不支持背景渐变的浏览器 */  
+    background:-moz-linear-gradient(top, rgba(255,255,255, 0.1), #000);  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255,255,255, 0.1)), to(#000));  
+    background:-o-linear-gradient(top, rgba(255,255,255, 0.1), #000); 
+}
+
+.wd-recordings-bot {
+	height: 31px;
+}
+
+.wd-recordings-avatar {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin: 5px 0 0 5px; 
+	float: left;
+}
+
+.wd-recordings-nickname {
+	display: block;
+	line-height: 31px;
+	color: #000;
+	font-size: 12px;
+	margin: 0 60px 0 30px;
+	overflow:hidden;;/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	white-space:nowrap;/* 不换行 */
+}
+
+.wd-recordings-num {
+	color: #777;
+	width: 25px;
+	float: right;
+	margin: 0 5px 0 6px;
+	line-height: 31px;
+	font-size: 10px;
+}
+
+.wd-recordings-playicon {
+	width: 13px;
+	height: 13px;
+	float: right;
+	margin: 9px 0 0 0; 
+}
+
+.page-bottom-absolute {
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

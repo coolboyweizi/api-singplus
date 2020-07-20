@@ -1,0 +1,135 @@
+/* 帮助中心 */
+
+.feedbackBox {
+	background: #fff;
+	border-top: 1px slid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 1px;
+}
+
+.feedback-textarea {
+	padding: 10px 15px;
+	line-height: 1.3;
+	color: #444;
+	min-height: 110px;
+	display: block;
+	border: 0;
+	resize: none;
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	letter-spacing: 1px;
+}
+
+.feedbackBox-bot {
+	margin: 10px 0; 
+	padding: 0 15px;
+	text-align: right;
+}
+
+.feedbackBox-bot .submit {
+	display: inline-block;
+	height: 30px;
+	width: 85px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	background: #fa7030;
+	border-radius: 3px;
+}
+
+.h-title-bar {
+	margin-top: 36px;
+	height: 40px;
+	border-left: 3px solid #fa7231;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	background: #fff;
+}
+
+.h-title-bar .title {
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.problems-list {
+	background: #fff;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.problem-item {
+	display: block;
+}
+
+.problem-item-link {
+	display: block;
+}
+
+.problem-item-wrap {
+	margin-left: 15px;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 10px 15px 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+.problem-item-wrap .index {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	color: #fff;
+	background: #fa7231;
+	display: block;
+	text-align: center;
+	line-height: 20px;
+}
+
+.problem-item-wrap .content {
+	font-size: 14px;
+	color: #444;
+	flex: 1;
+	margin-left: 8px;
+}
+
+.problem-item-wrap .turn-right {
+	margin-left: 20px;
+	width: 8px;
+	height: 13px;
+	background: url("../images/turn_right.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+.problem-item-content {
+	font-size: 14px;
+	line-height: 1.2;
+	padding: 10px 15px 10px 25px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-left: 15px;
+	color: #999;
+	display: none;
+}
+
+.problem-item-wrap-noborder {
+	border: none;
+}
+
+.help-detail-title {
+	font-size: 16px;
+	color: #444;
+	font-weight: bold;
+	padding: 10px 15px;
+	text-align: center;
+}
+
+.help-detail-content {
+	padding: 15px;
+	font-size: 14px;
+	color: #444;
+	line-height: 1.3;
+}
+
+
+

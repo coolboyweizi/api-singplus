@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- 作品分享页面 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>work detail page</title>
+        <link rel="stylesheet" href="../css/normalize.css" />
+        <link rel="stylesheet" href="../third/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="../third/owlcarousel/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../third/layer_mobile/need/layer.css">
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="styleSheet" href="../css/workDetail.css" />
+    </head>
+
+    <body>
+
+    <div class="header">
+        <span class="header-title" id="title"></span>
+    </div>
+
+    <div class="main-panel">
+        <div class="wd-play-panel" id="playArea">
+            <!--播放幻灯片区域-->
+            <div class="wd-slides">
+                <div class="owl-carousel" id="owlCarousel"></div>
+            </div>
+
+            <!--播放歌词区域-->
+            <div class="wd-lyric" id="lyricPanel">
+                
+            </div>
+
+            <!--音频播放-->
+            <div class="media-container">
+                <audio id="media" width="300" src=""></audio> 
+            </div>
+        </div>
+
+        <div class="wd-infos-panel wrap">
+            <div class="avatar-box">
+                <img class="avatar" id="avatar" src="../images/avatar.png" />
+
+                <div class="nickName-box">
+                    <span class="nickname" id="nickname"></span>
+                    <!-- <span class="fans" id="fans"></span> -->
+                </div>
+            </div>
+
+            <p class="wd-info-content" id="content"></p>
+
+            <div class="wd-info-bot">
+                <div class="left">
+                    <img class="icon" src="../images/play_dark.png"/>
+                    <span class="nums" id="playNums"></span>
+                    <img class="icon" src="../images/favourite_dark.png" />
+                    <span class="nums" id="favouriteNums">  </span>
+                </div>
+                <span class="date" id="publishDate"></span>
+            </div>
+        </div>
+
+        <div class="wd-title-bar">
+            <span class="title">Comment</span>
+        </div>
+
+        <div class="wd-comment-panel wrap">
+            <input type="text" class="comment-input" id="commentInput" />
+            <a class="comment-btn" id="commentBtn">Comment</a>
+        </div>
+        
+        <div class="wd-comments">
+            <ul class="wd-comment-list" id="comments">
+            </ul>
+        </div>
+    </div>
+
+    <!-- 引导打开app -->
+    <div class="guide-download">
+        <img src="../images/ic_launcher.png" class="guide-download-logo" />
+        <span class="guide-download-text">Karaoke on the go</span>
+        <a class="guide-download-btn">Download</a>
+    </div>
+
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/utils.js" type="text/javascript"></script>
+    <script src="../third/audio/audio.js" type="text/javascript"></script>
+    <script src="../third/owlcarousel/owl.carousel.min.js"></script>  
+    <script src="../third/layer_mobile/layer.js" type="text/javascript"></script> 
+    <script src="../js/lyrc.h5.js" type="text/javascript"></script>
+    <script src="../js/workDetail.js" type="text/javascript"></script>
+    </body>
+</html>

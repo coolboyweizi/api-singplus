@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- 反馈页面 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Sing Plus #risingstar Giveaway</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html,body {
+                background: #120d4f;
+            }
+
+            .res-img {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .enter-btn {
+                display: block;
+                position: absolute;
+                height: 45px;
+                width: 80%;
+                bottom: 20px;
+                left: 10%;
+                font-size: 17px;
+                color: #120d4f;
+                text-decoration: none;
+                text-align: center;
+                line-height: 45px;
+                border-radius: 5px;
+                background-image:-webkit-linear-gradient(90deg, #fa759d, #e43f71); 
+                background-image:linear-gradient(0deg, #fa759d, #e43f71);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="position:relative;">
+            <img src="images/bg.jpg" class="res-img" />
+            <a href="javascript:;" class="enter-btn" id="enterBtn">Enter Now</a>
+        </div>
+        <img src="images/bottom.jpg" class="res-img" />
+
+        <script type="text/javascript">
+            document.getElementById("enterBtn").onclick = function() {
+                if (navigator.userAgent.match(/android/i)) {
+                    openAndroid();
+                }
+            };
+
+            function openAndroid() {
+                var ifrSrc = 'singplus://';
+                var ifr = document.createElement('iframe');
+                ifr.src = ifrSrc;
+                ifr.style.display = 'none';
+                var t = Date.now();
+                document.body.appendChild(ifr);
+
+                setTimeout(function() {
+                    document.body.removeChild(ifr);
+                    if(!t || Date.now() - t < 600) {
+                        location.href = "market://details?id=com.karaoke.singplus&referrer=utm_source%3Dshare";
+                    }
+                }, 500);
+            }
+        </script>
+    </body>
+</html>

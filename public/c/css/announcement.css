@@ -1,0 +1,30 @@
+/* 公告 */
+.announce-title {
+	font-size: 16px;
+	color: #444;
+	font-weight: bold;
+	padding: 10px 15px;
+	text-align: center;
+}
+
+.announce-date {
+	font-size: 12px;
+	color: #9a9a9a;
+	text-align: center;
+}
+
+.announce-coverWrap {
+	margin-top: 12px;
+}
+
+.announce-coverWrap img {
+	max-width: 100%;
+	width: 100%;
+}
+
+.announce-content {
+	padding: 15px;
+	font-size: 14px;
+	color: #444;
+	line-height: 1.3;
+}
